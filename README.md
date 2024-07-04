@@ -1,23 +1,18 @@
-## Hi there 👋
+## 🌱プロフィール
 
-<a href="https://github.com/hase111111">
-  <img align="left" height="170px" src="https://github-readme-stats.vercel.app/api?username=hase111111&count_private=true&show_icons=true&theme=dracula" />
-</a>
-<a href="https://github.com/hase111111">
-  <img align="left" height="170px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=hase111111&layout=compact&theme=dracula" />
-</a>
+ロボット工学を専攻している機械工学系の学生です．
+特に軌道計画，運動制御，機構解析を研究しています．
+また，趣味でゲームプログラミングを行っております．
 
-<!--
-**hase111111/hase111111** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+![](https://github-readme-stats.vercel.app/api?username=hase111111&count_private=true&show_icons=true&theme=dracula)
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=hase111111&layout=compact&theme=dracula)
 
-Here are some ideas to get you started:
+### ☘️スキル
+![](https://skillicons.dev/icons?i=c,cpp,python,cs,matlab)
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+![](https://skillicons.dev/icons?i=vscode,visualstudio,anaconda,blender,unreal,unity,git,github,arduino,ros,linux,ubuntu)
+
+
+## 💬ポートフォリオ
+ポートフォリオは以下のリンクにございます．
+
