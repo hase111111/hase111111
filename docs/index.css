@@ -1,0 +1,14 @@
+.img-hidden {
+    max-height: 300px;
+    overflow: hidden;
+  }
+
+  .container-m {
+    margin-top: 80px;
+  }
+
+  .footer{
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 1rem;
+  }
