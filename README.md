@@ -7,7 +7,9 @@
 ![](https://github-readme-stats.vercel.app/api?username=hase111111&count_private=true&show_icons=true&theme=dracula)
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=hase111111&layout=compact&theme=dracula)
 
-### ☘️スキル
+[![](https://github-readme-streak-stats.herokuapp.com/?user=hase111111&theme=dracula)](https://github-readme-streak-stats.herokuapp.com/?user=hase111111&theme=dracula)
+
+### ☘️スキル・ツール
 ![](https://skillicons.dev/icons?i=c,cpp,python,cs,matlab)
 
 ![](https://skillicons.dev/icons?i=vscode,visualstudio,anaconda,blender,unreal,unity,git,github,arduino,ros,linux,ubuntu)
