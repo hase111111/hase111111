@@ -3,15 +3,18 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>レイアウト方法</title>
+    <title>ポートフォリオ/Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
   <body>
 
+    <!--NavBar(画面上部のメニュー)-->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#">
+            <h1>Portfolio</h1>
+          </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -46,53 +49,196 @@
         </div>
       </nav>
     
-      <div class="img-hidden">
-        <img src="images/test.jpg" class="img-fluid w-100">
+      <div class="container mt-5"> 
+        <h1> 自己紹介 </h1>
+        <p>
+          <ul>
+            <li>名前：長谷川大晴</li>
+            <li>年齢：22歳 (2001年生まれ)</li>
+            <li>所属：埼玉大学大学院 理工学研究科 機械科学プログラム 博士課程前期課程 / 修士1年生 26卒</li>
+            <li>研究室：<a href="http://design.mech.saitama-u.ac.jp/">設計工学研究室</a>(2024/7/4現在，メンバーが前年度から更新されていないため，学部4年生と表示されます)</li>
+            <li>専攻：ロボット工学</li>
+          </ul>
+        </p>
       </div>
-    
+
       <div class="container container-m">
-        <div class="row row-cols-1 row-cols-md-2 g-4">
-            <div class="col">
-              <div class="card">
-                <img src="images/test.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
+        <h1> 研究 </h1>
+        <p>
+          私が大学で専攻している分野は「ロボット工学」です．中でも運動軌道生成，軌道追従制御，機構解析などを研究しています．
+          担当教師は<a href="http://design.mech.saitama-u.ac.jp/introduction/person/kotosaka.html">琴坂信哉（KOTOSAKA, Shinya）准教授</a>です．<br>
+          移動形態に脚歩行を採用した多脚ロボットの歩行や，冗長自由度を持つロボットハンドの制御など，
+          複雑な運動学・動力学を必要とするロボットの制御に関する研究を行っています．<br>
+        </p>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <!--研究１つ目-->
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/robot_phantom.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">グラフ探索による自由歩容生成</h5>
+                <p class="card-text">
+                  大学4年時に行った研究です．
+                  6つの脚を持つ多脚ロボットの自由歩容生成を目的として，グラフ探索を用いた手法を提案しました．
+                </p>
               </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img src="images/test.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img src="images/test.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img src="images/test.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">キーワード：多脚ロボット，自由歩容生成，グラフ探索</small>
               </div>
             </div>
           </div>
+          <!--研究２つ目-->
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/robot_seed.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">協働ロボットのための軌道生成</h5>
+                <p class="card-text">
+                  現在取り組んでいる研究です．
+                  人間と協働するロボットのための軌道生成手法を研究しています．
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">キーワード：協働ロボット，ロボット安全，冗長双腕ロボット</small>
+              </div>
+            </div>
+          </div>
+          <!--研究３つ目を追加するならここに記述する-->
+        </div>
       </div>
 
-      <footer class="footer container-m">
-        © 2023 Bootstrap test
+      <div class="container container-m">
+        <h1> ゲームプログラミング </h1>
+        <p>
+          幼いころから「オリジナルのゲーム作りをしたい」という夢があり，画用紙にオリジナルのゲームを描いたり，自由帳を架空の自作ゲームの攻略本にしたりして遊んでいました．
+          PCを手に入れた中学生の頃からプログラミングを始め，中学3年生の頃にはじめてC++とDxLibを使ってゲームを作りました．
+          以降，今に至るまで，C++，C#，Unity，Unreal Engineなどを使ってゲームを作り続けています．
+          個人的に趣味で作成したゲームや，大学生になってから，所属しているサークルで作成したゲームを以下に紹介します．
+        </p>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <!--ゲーム１つ目-->
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/bard_dash.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">ばーど だっしゅ!</h5>
+                <p class="card-text">
+                  Unreal Engine5で作成した3Dアクションゲームです．
+                  1人で，8か月程度かけて開発しました．
+                  個人開発したゲームでは珍しく，ゲーム中に登場するほぼすべての3Dモデルを自作しているのが特徴です．
+                  それにともない，キャラクターのリグ，アニメーションも自作しています．
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">2022年(大学3年時)に作成．文化祭で発表．</small>
+              </div>
+            </div>
+          </div>
+          <!--ゲーム２つ目-->
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/carry_block.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Carry Block !</h5>
+                <p class="card-text">
+                  Unityで開発した3Dパズルゲームです．
+                  10人程度のサークルのメンバーと共に，約1年かけて開発しました．
+                  私はプランナー，3Dモデラー，アニメーター，プログラマーとして，多岐にわたって開発に携わりました．
+                  文化祭の他，ゲーム∞^3（ゲームキュービック），ゲームプログラマー甲子園などさまざまなイベントで発表しました．
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">2024年(大学4年時)に作成．文化祭や各種イベントで発表．</small>
+              </div>
+            </div>
+          </div>
+          <!--ゲーム３つ目-->
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/match_game.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">マッチ棒ゲーム</h5>
+                <p class="card-text">
+                  DxLibを使って作成したデジタルボードゲームです．
+                  1人で，5か月程度かけて開発しました．
+                  有名な手遊びをデジタル化したもので，CPUと対戦できます．
+                  min-max法を用いたCPUの思考ルーチンを実装しており，最高難易度に人間が勝つことは不可能です．
+                  文化祭に向けて開発しましたが，新型コロナウイルス感染症の影響で文化祭が中止となったため，2023年度以降の文化祭で発表しています．
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">2022年(大学2年時)に作成．</small>
+              </div>
+            </div>
+          </div>
+          <!--ゲーム４つ目-->
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/merin_homerun.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">めりんちゃんのホームランダービー</h5>
+                <p class="card-text">
+                  大学2年次まで，新型コロナウイルス感染症の影響で対面のサークル活動が制限されていたため，大学3年次の新入生歓迎会のために作成したゲームです．
+                  DxLibを用いて作成し，1人で4か月程度かけて開発しました．
+                  埼玉大学のマスコットキャラクター「めりんちゃん」を主人公にし，有名な野球ゲームをモチーフにした2Dゲームです．
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">2022年(大学2年時)に作成．</small>
+              </div>
+            </div>
+          </div>
+          <!--ゲーム５つ目-->
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/match_game.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">その他のゲーム</h5>
+                <p class="card-text">
+                  その他にも個人で作成したゲームや，サークルで作成したゲームがあります．
+                  その中でも小規模なものや，「テトリス」のようにオリジナルではないものをこのページで紹介します．
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary"></small>
+              </div>
+            </div>
+          </div>
+          <!--ゲーム６つ目-->
+          <!--追加するなら，ここに記述すること-->
+        </div>
+      </div>
+
+      <div class="container container-m">
+        <h1> 来歴 </h1>
+        <p>
+          <ul>
+            <li>2017年4月：さいたま市立浦和高等学校 入学</li>
+            <li>2020年3月：さいたま市立浦和高等学校 卒業</li>
+            <li>2020年4月：埼玉大学 工学部 機械工学システムデザイン学科 入学</li>
+            <li>2024年3月：埼玉大学 工学部 機械工学システムデザイン学科 卒業 <strong>学士(工学)取得</strong></li>
+            <li>2024年4月：埼玉大学大学院 理工学研究科 機械科学プログラム 修士課程 入学</li>
+          </ul>
+          <p style="text-align: center;">現在に至る</p>
+
+        </p>
+      </div>
+
+      <!--連絡先-->
+      <div class="container container-m">
+        <h2> 連絡先 </h2>
+          メールアドレス：<a href="mailto:t.hasegawa.853@ms.saitama-u.ac.jp">連絡はこちらから</a>
+      </div>
+
+      <!--トップに戻るを作成-->
+      <div class="container container-m">
+        <p style="text-align: center;"><a href="#top">トップに戻る</a></p>
+      </div>
+
+      <footer class="footer">
+        © 2024 Taisei HASEGAWA All Rights Reserved. <br>
+        最終更新日：2024年7月4日
       </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
