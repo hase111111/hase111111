@@ -25,4 +25,5 @@ I also do game programming as a hobby.
 
 Portfolio is available at the following link.
 
+https://hase111111.github.io/hase111111/ (現在更新中です)
 
