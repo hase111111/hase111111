@@ -24,38 +24,88 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
             <!--Homebutton．押すとページトップへ戻る-->
-              <a class="nav-link active" href="#top">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link active" href="index.html">Home</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">           
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="game_bird.html">ばーどだっしゅ!</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">研究</a>
+              <ul class="dropdown-menu dropdown-menu-right">           
+                <li><a class="dropdown-item" href="study_leg.html">グラフ探索による自由歩容生成</a></li>
+                <li><a class="dropdown-item" href="study_arm.html">協働ロボットのための軌道生成</a></li>
               </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">ゲーム</a>
+              <ul class="dropdown-menu dropdown-menu-left">           
+                <li><a class="dropdown-item" href="game_bird.html">ばーどだっしゅ!</a></li>
+                <li><a class="dropdown-item" href="game_carry.html">Carry Block!</a></li>
+                <li><a class="dropdown-item" href="game_match.html">マッチ棒ゲーム</a></li>
+                <li><a class="dropdown-item" href="game_merin.html">めりんちゃんのホームランダービー</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="game_other.html">その他のゲーム</a></li>
+              </ul>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
         </div>
       </div>
     </nav>
-
     <!--NavBarからスペースをとるためのダミー-->
     <div></div>
+
+    <!--タイトル-->
+    <div class="container container-m">
+      <h1>グラフ探索による自由歩容生成</h1>
+      <h2>概要</h2>
+        <p>
+          この研究は，多脚ロボットの自由歩容パターンを生成するための手法を提案するものです．
+          多くの研究では，多脚ロボットの歩容パターンは固定歩容が用いられています．
+          しかし，多脚ロボットはその特性上，不整地の踏破や障害物の跨ぎ超え動作が求められます．
+          そのため，多脚ロボットの歩容パターンを自由に変更できる手法が求められています．
+        </p>
+      <h2>基礎知識</h2>
+        <p>
+          <ul>
+            <li>グラフ探索</li>
+            <li>多脚ロボット</li>
+            <li>歩容パターン</li>
+          </ul>
+        </p>
+    </div>
       
+    <!--本文-->
+    <div class="container container-m">
+      <h1>研究のために開発したツール</h1>
+      <h2>シミュレータ</h2>
+      <p>
+        この研究のため，グラフ探索よる自由歩容パターン生成の結果をグラフィカルに表示するシミュレータを開発しました．
+        先行研究でも，同様の機能を持つシミュレータが開発されていましたが，上からの俯瞰した視点でしかカメラを動かせないことや，
+        画面表示クラスとロジッククラスが分離されていないことなどが課題でした．
+        私はゲーム開発の経験を活かし，より使いやすく，拡張しやすいシミュレータを開発しました．
+
+        シミュレータのソースコードは<a href="">私のレポジトリ</a>から確認できます．
+        また，ドキュメントは<a href="">こちら</a>から確認できます．
+
+        <h3>機能</h3>
+        <ul>
+          <li>歩容パターンの表示</li>
+          <li>カメラの回転・移動</li>
+          <li>歩容パターンの再生・停止</li>
+          <li>歩容パターンの再生速度の変更</li>
+          <li>歩容パターンの再生位置の変更</li>
+        </ul>
+        <h3>工夫した点</h3>
+        <ul>
+          <li>カメラの操作をより直感的にするため，一般的な3Dビューアーのように，マウス操作でカメラを回転・移動させる機能を追加しました．</li>
+          <li>シミュレータの拡張性を高めるため，画面表示クラスとロジッククラスを分離しました．</li>
+          <li>より高速な計算を行うため，位置ベクトルやクォータニオンの計算をするクラスを自作しました．</li>
+          <li>シミュレータの使い方をより分かりやすくするため，Doxygenを使って簡易にドキュメントを追加できるようにしました．</li>
+          <li>google c++ style guide をベースにして，統一した記述でコーディングを行いました． </li>
+        </ul>
+      </p>
+
+      <h2>可動範囲ビューアー</h2>
+
+    </div>
+
     <!--トップに戻るを作成-->
     <div class="container container-m">
       <p style="text-align: center;"><a href="#top">トップに戻る</a></p>
