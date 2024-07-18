@@ -55,23 +55,31 @@
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="images/bard_dash_playview01.png" class="d-block mx-auto" width="auto" height="400" alt="ばーどだっしゅ!">
+          <img src="images/bard_dash.jpg" class="d-block mx-auto" width="auto" height="400" alt="ばーどだっしゅ!">
+        </div>        
+        <div class="carousel-item">
+          <img src="images/bard_dash_playview01.jpg" class="d-block mx-auto" width="auto" height="400" alt="ばーどだっしゅ!">
         </div>
         <div class="carousel-item">
-          <img src="images/bard_dash_playview02.png" class="d-block mx-auto" width="auto" height="400" alt="ばーどだっしゅ!">
+          <img src="images/bard_dash_playview02.jpg" class="d-block mx-auto" width="auto" height="400" alt="ばーどだっしゅ!">
         </div>
         <div class="carousel-item">
-          <img src="images/bard_dash_playview03.png" class="d-block mx-auto" width="auto" height="400" alt="ばーどだっしゅ!">
+          <img src="images/bard_dash_playview03.jpg" class="d-block mx-auto" width="auto" height="400" alt="ばーどだっしゅ!">
         </div>
         <div class="carousel-item">
-          <img src="images/bard_dash_playview04.png" class="d-block mx-auto" width="auto" height="400" alt="ばーどだっしゅ!">
+          <img src="images/bard_dash_playview04.jpg" class="d-block mx-auto" width="auto" height="400" alt="ばーどだっしゅ!">
         </div>
+        <div class="carousel-item">
+          <img src="images/bard_dash_playview05.jpg" class="d-block mx-auto" width="auto" height="400" alt="ばーどだっしゅ!">
+        </div>        
       </div>
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" style="filter: invert(100%);" aria-hidden="true"></span>
@@ -88,9 +96,141 @@
     <div class="container container-m">
       <h1>ばーどだっしゅ!</h1>
   
-      <p>ばーどだっしゅ!は、Unityで作成した2Dアクションゲームです。</p>
+      <p>
+        ばーどだっしゅ!は，Unreal Engine5で作成した3Dアクションゲームです．
+        <br><br>
+        プレイヤーは，鳥のキャラクターを操作して，障害物をよけながらゴールへ進むことが目的です．
+        鳥はプレイヤーの操作なしに前進し続けるため，プレイヤーは先をよく見て障害物を左右に避けることが必要です．
+        障害物は棘や岩などの静的なものだけでなく，大砲や動物などの動的なものも存在しプレイヤーを襲うことがあります．
+        障害物にあたったり落下したりするとミスとなり，ステージの最初からやり直しとなります．
+        <br><br>
+        また，ステージの途中にはハート型のアイテムが配置されており，これをとることで新しいステージが解放されます．
+        ハートは基本的に取得することが難しい場所に配置されているため，プレイヤーはステージをよく観察して取得を目指すことが求められます．
+        <br><br>
+        ステージは全部で12ステージ + シークレット2ステージ（ステージ1-1～ステージ3-4 + ステージ4-1～ステージ4-2）あり，ステージごとに異なるテーマが設定されています．
+      </p>
     
     </div>
+
+    <!--こだわり-->
+    <div class="container container-m">
+      <h1>こだわり</h1>
+  
+      <div class="row">
+        <div class="col-md-5">
+          <div class="mx-auto" style="width: auto;">
+            <div class="row">
+              <img src="images/bard_dash_tutorial1.jpg" class="img-fluid" alt="ばーどだっしゅ!">
+              <p>チュートリアルステージの様子</p>
+              <br><br>
+            
+              <div class="col-md-6">
+                <img src="images/bard_dash_tutorial2.jpg" class="img-fluid" alt="ばーどだっしゅ!">
+                <p>ジャンプ台</p>
+              </div>
+              <div class="col-md-6">
+                <img src="images/bard_dash_tutorial3.jpg" class="img-fluid" alt="ばーどだっしゅ!">
+                <p>ハート</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <h2>シンプルな操作性</h2>
+          <p>
+            本作は大学の文化祭で展示するために作成したため，文化祭に来場するさまざまな年齢の方々が遊びやすいように，シンプルな操作性を心がけています．
+            スマートホン向けのアプリ「Rolling Sky」のように，プレイヤーはキャラクターを左右に移動させるだけで操作が完結します．
+            また，ジャンプについてもジャンプ台を踏むことで自動的にジャンプするようになっており，プレイヤーはジャンプボタンを押す必要がありません．
+            <br><br>
+            実際に文化祭で展示したところ，幅広い年齢層の方々に楽しんでいただけたというフィードバックをいただきました．
+          </p>
+        </div>
+      </div>
+
+      <hr> 
+
+      <div class="row">
+        <div class="col-md-6">
+          <h2 class="">3Dモデル</h2>
+          <p>
+            個人製作のゲームでは珍しく，ほぼすべての3DモデルをBlenderを用いて自作しています．
+            ゲーム中に登場するキャラクターや障害物，マップタイルはほぼすべて自作のアセットです．（既存のアセットを利用したものは森林ステージの木のモデル2種類だけです．）
+            <br><br>
+            これにより，いわゆる「Unityっぽさ」や「Unreal Engineっぽさ」がなく，ローポリでかわいらしい独自の世界観を表現しています．
+            <br><br>
+            また，キャラクターのアニメーションもBlenderで自作しており，キャラクターがジャンプするときのアニメーションや，障害物にぶつかったときのアニメーションなど，細かい部分までこだわっています．
+          </p>
+        </div>
+        
+        <div class="col-md-6">
+          <div class="mx-auto" style="width: 400px;">
+            <img src="images/bard_dash_anime1.gif" class="img-fluid" alt="ばーどだっしゅ!">
+            <br><br>  
+            <img src="images/bard_dash_anime2.gif" class="img-fluid" alt="ばーどだっしゅ!">
+          </div>
+        </div>
+      </div>
+
+      <hr> 
+      
+      <div class="row">
+        <div class="col-md-6">
+          <img src="images/bard_dash_playview05.png" class="img-fluid" alt="ばーどだっしゅ!">
+        </div>
+        <div class="col-md-6">
+          <h2>さまざまなギミック</h2>
+          <p>
+            本作にはさまざまなギミックが登場します．
+            近づくまで見えない橋，ボタンを押すと切り替わる床，鍵を取ると開く扉など，プレイヤーの行動によって状況が変化するものが多数存在します．
+            <br><br>
+            ギミックは各ステージのイメージに合わせて設計されています．
+            たとえば，遺跡をイメージしたステージ3-1～3-4では，鍵を取ると開く扉や，地面から突然現れる大口などが登場します．
+            これによって，プレイヤーはステージを進むたびに新しい驚きを感じることができます．
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!--技術-->
+    <div class="container container-m">
+      <h1>技術</h1>
+  
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Unreal Engine5</h2>
+          <p>
+            本作はUnreal Engine5を用いて開発されています．
+            <br><br>
+            Unreal Engineを使用した理由は，グラフィックスの表現力が高いためです．
+            自作した3Dモデルを明るく美しく表現するためには，UnityよりもUnreal Engineの方が適していると考えました．
+            <br><br>
+            UE5はC++やBlueprintを用いてプログラムを記述することができ，本作では主にBlueprintを使用しています．
+          </p>
+        </div>
+        
+        <div class="col-md-6">
+          <img src="images/bard_dash_playview06.png" class="img-fluid" alt="ばーどだっしゅ!">
+        </div>
+      </div>
+
+      <hr> 
+
+      <div class="row">
+        <div class="col-md-6">
+          <img src="images/bard_dash_playview07.png" class="img-fluid" alt="ばーどだっしゅ!">
+        </div>
+        <div class="col-md-6">
+          <h2>Blender</h2>
+          <p>
+            本作では，3Dモデルの作成にBlenderを用いています．
+            <br><br>
+            低スペックのPCでもプレイすることができるように，モデルのポリゴンを極力少なくしたり，テクスチャを簡素化するなどの工夫をしています．
+          </p>
+        </div>
+      </div>
+    </div>
+
 
     <!--トップに戻るを作成-->
     <div class="container container-m">
