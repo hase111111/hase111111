@@ -23,3 +23,16 @@
     background: transparent;/*背景透明に*/
     border-left: solid 5px #7db4e6;/*左線*/
   }
+
+  .hoge-item-link {
+    display: block;
+    color: #333;
+    background-color: #f2f2f2;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: all 0.3s ease 0s;
+  }
+  
+  
+  .hoge-item-link:hover {
+    opacity: 0.6;
+  }
