@@ -1,4 +1,4 @@
-.img-hidden {
+  .img-hidden {
     max-height: 300px;
     overflow: hidden;
   }
@@ -35,4 +35,10 @@
   
   .hoge-item-link:hover {
     opacity: 0.6;
+  }
+
+  .img-cover{
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
   }
