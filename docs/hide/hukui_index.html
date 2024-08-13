@@ -1,0 +1,190 @@
+
+<!doctype html>
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>旅のしおり</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
+    <div class="bg_pattern Rectangles"></div>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <!--NavBar(画面上部のメニュー)-->
+    <nav class="navbar navbar-expand-lg bg-warning fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <h2>Menu</h2>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="temp.html">Top</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Jump</a>
+              <ul class="dropdown-menu dropdown-menu-right">           
+                <li><a class="dropdown-item" href="#time">タイムスケジュール</a></li>
+                <li><a class="dropdown-item" href="#item">持ち物</a></li>
+                <li><a class="dropdown-item" href="#map">地図</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--NavBarからスペースをとるためのダミー-->
+    <div></div>
+
+    <!--タイトル-->
+    <div class="kiwi-maru-regular container container-m">
+      <h1><i class="fa fa-bookmark"></i> たびのしおり</h1>
+      
+      <p>
+        いきさき：ふくいけん<br>
+        やりたいこと：かんこう<br>
+        にってい：8/18(土よう日) から 8/20(月よう日)
+        <br><br>
+        まいごになったときのれんらくさき：048-731-6711 <span style="color: white;">（旧ららぽーと春日部にかかります）</span> <br>
+        ひとりあたりのりょうきん：￥66,992 = ￥6,782(レンタカーだい) + ￥29,000(とっきゅうけん) + ￥31,210(しゅくはくひ)
+        <ul>
+          <li>あやしい人にはついていかないようにしましょう．</li>
+          <li>ともだちとなかよくしましょう．</li>
+          <li>おかしは＄300までです．</li>
+          <li>出発の前に取得単位数とシラバスを読み直して，卒業条件を満たしているか確認しておきましょう．</li>
+          <li>後期の履修登録を済ませておきましょう．4年後期に卒業不可が確定すると悲惨です．</li>
+        </ul> 
+      </p>
+    
+    </div>
+
+    <!--タイムスケジュール-->
+    <a id="time"></a>
+    <div class="kiwi-maru-regular container container-m">
+      <h1><i class="fa fa-clock-o"></i> タイムスケジュール</h1>
+
+      <p>
+        <ul>
+          <li>
+            1日目 8/18 (土)
+            <ul>
+              <li>10:00 大宮駅集合</li>
+              <li>10:47 ~ 13:13 移動（新幹線 かがやき509）</li>
+              <li>13:30 あわら温泉駅前店 レンタカー受取</li>
+              <li>自由 (但しチェックイン時間15:00~22:00なので注意)</li>
+            </ul>
+            <!--画像を挿入-->
+            <img src="temp1.jpg" alt="あわら温泉" width="500" border="1">
+            <br><br>
+          </li>
+          <li>
+            2日目 8/19 (日)
+            <ul>
+              <li>自由<br><br></li>
+            </ul>
+          </li>
+          <li>
+            3日目 8/20 (月)
+            <ul>
+              <li>10:00 チェックアウト</li>
+              <li>自由</li>
+              <li>15:00 あわら温泉駅前店 レンタカー返却</li>
+              <li>15:31 ~ 18:03 移動（新幹線 かがやき510）</li>
+              <li>18:03 大宮駅解散</li>
+            </ul>
+            
+            <!--画像を挿入-->
+            <img src="temp2.jpg" alt="あわら温泉" width="500" border="1">
+          </li>
+        </ul>
+      </p>
+
+    </div>    
+
+    <!--持ち物-->
+    <a id="item"></a>
+    <div class="kiwi-maru-regular container container-m">
+      <h1><i class="fa fa-lock"></i> 持ち物</h1>
+
+      <p>
+        <ul>
+          <li>財布・スマホ・充電器</li>
+          <li>運転免許証</li>
+          <li>常備薬</li>
+          <li>靴下・下着・着替えなど (2泊分)</li>
+          <li>部屋着・パジャマ</li>
+          <li>特急券（駅で発券するんだっけ？）</li>
+          <li>ゲーム・ボードゲームなど</li>
+          <li>化粧品・洗面用具など</li>
+          <li>なんか他ある？だいたい書いたと思うけど</li>
+        </ul>
+
+        以下，アメニティにある．参考リンク：<a href="https://foret-de-repos.jp/faq">ルポの森Q&A</a>
+        <ul>
+          <li>バスタオル/フェイスタオル</li>
+          <li>シャンプー/リンス/ボディーソープ</li>
+          <li>ドライヤー</li>
+          <li>浴衣/スリッパ</li>
+          <li>歯ブラシ/歯磨き粉</li>
+        </ul>
+      </p>
+    
+    </div>
+
+    <!--地図-->
+    <a id="map"></a>
+    <div class="kiwi-maru-regular container container-m">
+      <h1><i class="fa fa-map"></i> 地図</h1>
+  
+      <p>
+        観光スポット(青) & 宿泊場所(緑)
+      </p>
+
+      <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1vFwIP5Hs0RCQLW6uyTOWvY2wHzLWg6Q&ehbc=2E312F" width="640" height="480"></iframe>
+
+      <p>
+        移動の所要時間リスト
+        <br>
+        <ul>
+          <li>芦原温泉駅 → ルポの森: 31km 自動車(一般道) 47分</li>
+          <li>芦原温泉駅 → ルポの森: 39km 自動車(有料道路 ￥810) 36分</li>   
+          <li>芦原温泉駅 → 福井駅: 21km 自動車(一般道) 40分</li>
+          <li>芦原温泉駅 → 福井駅: 36km 自動車(有料道路 ￥810) 37分</li>
+          <li>福井駅 → 永平寺: 15km 自動車(一般道) 28分</li>
+          <li>福井駅 → ハピリンモール 駅前 徒歩数分</li>
+          <li>ルポの森 → 恐竜博物館: 29km 自動車 39分</li>  
+          <li>ルポの森 → 白山神社: 26km 自動車 34分</li>
+          <li>ルポの森 → 永平寺: 9.2km 自動車 16分</li>    
+          <li>ルポの森 → 一条滝: 9.3km 自動車 15分</li>
+        </ul>
+      </p>
+    </div>
+
+    <!--トップに戻るを作成-->
+    <div class="container container-m">
+      <p style="text-align: center;"><a href="#top">トップに戻る</a></p>
+    </div>
+
+    <!--フッター-->
+    <footer class="footer bg-warning text-center py-3">
+      © 2024 Taisei HASEGAWA All Rights Reserved. <br>
+      最終更新日：2024年8月13日
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" 
+            crossorigin="anonymous">
+    </script>
+  </body>
+
+</html>
