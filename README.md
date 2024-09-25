@@ -9,8 +9,10 @@ I am a mechanical engineering student specializing in robotics.
 I am researching trajectory planning, motion control, and mechanism analysis.
 I also do game programming as a hobby.
 
-![](https://github-readme-stats.vercel.app/api?username=hase111111&count_private=true&show_icons=true&theme=dracula)
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=hase111111&layout=compact&theme=dracula)
+<p align="left">
+  <img alt="Top Langs" height="150px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=hase111111&count_private=true&layout=compact&show_icons=true&theme=onedark" />
+  <img alt="github stats" height="150px" src="https://github-readme-stats.vercel.app/api?username=hase111111&theme=onedark&show_icons=ture" />
+</p>
 
 [![](https://github-readme-streak-stats.herokuapp.com/?user=hase111111&theme=dracula)](https://github-readme-streak-stats.herokuapp.com/?user=hase111111&theme=dracula)
 
@@ -25,5 +27,4 @@ I also do game programming as a hobby.
 
 Portfolio is available at the following link.
 
-https://hase111111.github.io/hase111111/ (現在更新中です)
-
+https://hase111111.github.io/hase111111/
