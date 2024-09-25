@@ -54,6 +54,46 @@
     <!--タイトル-->
     <div class="container container-m">
       <h1>その他のゲーム</h1>
+      <p>
+        ここでは，私が作成したその他のゲームを紹介します．
+        オリジナルのゲームではなく，有名なゲームを再現したものや，ゲームのロジックをオマージュした作品が多いです．<br>
+        また，ゲーム以外にも作成した3Dモデルもここで紹介します．
+      </p>
+    </div>
+
+    <!--ゲーム紹介1 Tetris-->
+    <div class="container container-m">
+      <h1>Tetris</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <p>
+            この作品は有名なゲーム「テトリス」を再現したものです．このゲームは，C++で作成し，DxLib(DirectX)を用いて描画しています．
+            大学1年生の時に1人で制作し，作成には約3か月かかりました．<br>
+            <br>
+            このゲームを作成したモチベーションとしては，T-spinのようなテクニックが実装されているテトリスはフリーゲームでは少ないため，自分で作成してみたいと思ったことが挙げられます．<br>
+            <br>
+            そのため，よくある自作テトリスとは異なり，公式のテトリスのロジックを再現することに重点を置いています．（公式のルールについては
+            <a href="https://ja.wikipedia.org/wiki/%E3%83%86%E3%83%88%E3%83%AA%E3%82%B9">wikipedia</a>を参照してください）
+            ハードドロップ，ソフトドロップ，ホールド機能など標準的な機能から，T-spin，Back-to-backなどの複雑なテクニックも再現しています．
+            ゲームモードとしては，テトリスゲームによく搭載されているENDLESSモード，MARATHONモード，ULTRAモードそしてSPRINTモードの4つを実装しています．
+          </p>
+        </div>
+        <div class="col-md-6">
+          <!--中央寄せで小さめの画像を1枚-->
+          <img src="images/tetris.jpg" class="img-fluid" alt="Tetris" width="50%">
+
+          <!--画像2枚-->
+          <div class="row">
+            <div class="col-md-6">
+              <img src="images/tetris0.jpg" class="img-fluid" alt="Tetris1">
+            </div>
+            <div class="col-md-6">
+              <img src="images/tetris1.jpg" class="img-fluid" alt="Tetris2">
+            </div>
+            <p> ↑ 有名なテクニックのDT砲（Double-Triple Cannon）も練習可能!</p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!--トップに戻るを作成-->
@@ -67,8 +107,8 @@
       最終更新日：2024年7月4日
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
-            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
             crossorigin="anonymous">
     </script>
   </body>
