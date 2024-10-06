@@ -23,7 +23,7 @@ I also do game programming as a hobby.
 
 
 ## 💬ポートフォリオ/Portfolio
-ポートフォリオは以下のリンクです．
+ポートフォリオは以下のリンクからご覧いただけます．
 
 Portfolio is available at the following link.
 
