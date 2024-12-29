@@ -6,11 +6,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ポートフォリオ/Portfolio</title>
+
+    <!--Bootstrapの読み込み-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!--CSSの読み込み-->
     <link rel="stylesheet" type="text/css" href="index.css">
+
+    <!--Googleフォントの読み込み-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
   </head>
 
   <body>
+    <!--Googleフォントのスタイル設定-->
+    <style>
+      body {
+        font-family: 'Zen Maru Gothic', sans-serif;
+      }
+    </style>
+
     <!--NavBar(画面上部のメニュー)-->
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
       <div class="container-fluid">
@@ -52,10 +68,11 @@
     <div></div>
 
     <!--タイトル-->
-    <div class="container container-m">
-      <h1>グラフ探索による自由歩容生成</h1>
+    <div class="container container-margin-big">
+      <h1 class="custom-heading">グラフ探索による自由歩容生成</h1>
 
-      <h2>概要</h2>
+      <h2><b>概要</b></h2>
+
       <p>
         大学4年生の時に行った，<strong>多脚ロボット<sup id="1_root"><a href="#1_leaf">[1] </a> </sup>の自由歩容<sup id="2_root"><a href="#2_leaf">[2] </a> </sup>を生成するための手法</strong>についての研究です．
         ロボットの状態をノード，動作をエッジとしてグラフを構築し，グラフ探索を行うことで，自由歩容を生成する手法を提案しています．
@@ -63,12 +80,15 @@
         本研究では，自作したシミュレータを用いた動作シミュレーションを行い，その結果から離散化を行いました．
       </p>
 
-      <!--画像を添付-->
-      <div class="mx-auto" style="width: 500px;">
-        <img src="images/phantom_move.jpg" class="img-fluid" alt="多脚ロボット">
-        <p>↑歩行実験の様子</p>
+      <!--実機による歩行実験の画像-->
+      <div class="mx-auto">
+        <div class="d-flex justify-content-center">
+          <img src="images/phantom_move.jpg" alt="実機による歩行実験" class="img-fluid" style="max-width: 500px;">
+        </div>
+        <p>歩行実験の様子</p>
       </div>
 
+      <!--詳細な説明の折りたたみ-->
       <a href="#demo1" data-bs-toggle="collapse">詳細な説明はこちら</a>
       <div class="collapse" id="demo1">
         <p>
@@ -102,7 +122,7 @@
 
     <!--本文-->
     <div class="container container-m">
-      <h1>研究のために開発したツール</h1>
+      <h1 class="custom-heading">研究のために開発したツール</h1>
       <h2>シミュレータ</h2>
 
       <p>
@@ -144,8 +164,6 @@
             </div>
           </div>
         </div>
-        
-
       </p>
 
       <h2>可動範囲ビューアー</h2>
@@ -231,9 +249,10 @@
     <!--フッター-->
     <footer class="footer">
       © 2024 Taisei HASEGAWA All Rights Reserved. <br>
-      最終更新日：2024年7月4日
+      最終更新日：2024年12月29日
     </footer>
 
+    <!--Bootstrapの読み込み-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
             integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" 
             crossorigin="anonymous">

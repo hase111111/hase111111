@@ -1,4 +1,17 @@
-  .img-hidden {
+
+/* リセットCSS */
+.custom-heading {
+  text-align: center;       /* テキストを中央寄せ */
+  padding-bottom: 10px;     /* 文字と下線の間隔を調整 */
+  text-decoration: underline;
+  text-decoration: underline #007bff; /* 下線を青色に */
+  text-underline-offset: 0.2em; /* 下線の位置を調整 */
+  font-weight: bold;        /* 見出しを太字に */
+  color: #494949;           /* 文字色 */
+  margin-bottom: 40px;      /* 下の余白 */
+}
+
+.img-hidden {
     max-height: 300px;
     overflow: hidden;
   }
@@ -7,22 +20,15 @@
     margin-top: 80px;
   }
 
-  .container-m-big {
-    margin-top: 120px;
-  }
+.container-margin-big {
+  margin-top: 120px;
+}
 
-  .footer{
-    background-color: #f8f9fa;
-    text-align: center;
-    padding: 1rem;
-  }
-
-  h1 {
-    padding: 0.25em 0.5em;/*上下 左右の余白*/
-    color: #494949;/*文字色*/
-    background: transparent;/*背景透明に*/
-    border-left: solid 5px #7db4e6;/*左線*/
-  }
+.footer{
+  background-color: #cccccc;
+  text-align: center;
+  padding: 1rem;
+}
 
   .hoge-item-link {
     display: block;
@@ -42,3 +48,15 @@
     width: 100%;
     object-fit: cover;
   }
+
+  .section1 {
+    background-color: #ff7e5f;
+}
+
+.section2 {
+    background-color: #6a82fb;
+}
+
+.section3 {
+    background-color: #45b649;
+}
