@@ -36,15 +36,14 @@
 }
 
 /*メディアクエリ*/
-@media (max-width: 768px) {
-  .sp-display-none {
-    display: none;
+@media(min-width:751px){
+  .sp{
+      display: none !important;
   }
 }
-
-@media (min-width: 769px) {
-  .pc-display-none {
-    display: none;
+@media(max-width:750px){
+  .pc{
+      display: none !important;
   }
 }
 
