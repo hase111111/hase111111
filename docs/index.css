@@ -36,18 +36,25 @@
 }
 
 /*メディアクエリ*/
-@media(min-width:751px){
-  .sp{
-      display: none !important;
-  }
+.sp {
+  display: block !important;
 }
-@media(max-width:750px){
-  .pc{
-      display: none !important;
+
+.pc {
+  display: none !important;
+}
+
+@media screen and (min-width: 768px) {
+  .sp {
+    display: none !important;
+  }
+
+  .pc {
+    display: block !important;
   }
 }
 
-.hoge-item-link {
+.my-item-link {
   display: block;
   color: #333;
   background-color: #f2f2f2;
@@ -55,12 +62,6 @@
   transition: all 0.3s ease 0s;
 } 
   
-.hoge-item-link:hover {
+.my-item-link:hover {
   opacity: 0.6;
 }
-
-  .img-cover{
-    height: 400px;
-    width: 100%;
-    object-fit: cover;
-  }
