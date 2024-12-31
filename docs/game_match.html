@@ -72,7 +72,7 @@
 
     <!--タイトル-->
     <div class="container container-margin">
-      <h1 class="custom-heading">マッチ棒ゲーム</h1>
+      <h1 class="custom-heading">　マッチ棒ゲーム　</h1>
       <center>
         <iframe src="https://drive.google.com/file/d/1cUu_v3HkWrKuzuf_nND28aSW6AAwe6mv/preview" width="100%" allow="autoplay" height="480">
         </iframe>
@@ -109,14 +109,35 @@
 
     <!--画像を2つ並べて表示-->
     <div class="container container-margin">
+      <h1 class="custom-heading">　こだわり　</h1>
+
+      <p>
+        このゲームはさまざまなローカルルールとそれに対応するCPUを実装した点が特徴です．
+        ローカルルールとしては，指の数が6本を超えた場合の処理の違いや，指の本数を自由に組み替えることができる采配機能のオンオフなどがあります．
+        <br>
+        <br>
+        また，CPUの強さはレベルをEasy，Normal, Hard, Impossibleの4段階から選択できます．
+        Impossibleはminimax法の探索深さを最大に設定し，最善手を選択するため，ほぼ勝ち目がありません．
+        逆に，Easyは最悪手を選択するため，逆に負けることが難しいです．
+        このように，CPUの強さを選択できることで，初心者から上級者まで楽しめるゲームとなっています．
+        <br>
+        <br>
+        ゲームの結果を保存する機能も実装しており，過去の対戦結果を確認できます．
+        加えてAIによる評価機能も実装しており，戦略を立てる際の参考になります．
+      </p>
+
       <div class="row">
         <div class="col-md-6">
-          <img src="images/match_game0.jpg" class="img-fluid" alt="マッチ棒ゲーム">
-          <p> ゲームの画面</p>
+          <div class="d-flex justify-content-center">
+            <img src="images/match_game/match_game1.jpg" alt="メニュー画面" class="img-fluid">
+          </div>
+          <p style="text-align: center;">メニュー画面</p>
         </div>
         <div class="col-md-6">
-          <img src="images/match_game1.jpg" class="img-fluid" alt="マッチ棒ゲーム">
-          <p> メニュー画面</p>
+          <div class="d-flex justify-content-center">
+            <img src="images/match_game/match_game2.jpg" alt="AIによる評価機能" class="img-fluid">
+          </div>
+          <p style="text-align: center;">AIによる評価機能</p>
         </div>
       </div>
     </div>
