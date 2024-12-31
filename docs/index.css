@@ -36,20 +36,20 @@
 }
 
 /*メディアクエリ*/
-.sp {
+.sp-only {
   display: block !important;
 }
 
-.pc {
+.pc-only {
   display: none !important;
 }
 
 @media screen and (min-width: 768px) {
-  .sp {
+  .sp-only {
     display: none !important;
   }
 
-  .pc {
+  .pc-only {
     display: block !important;
   }
 }
