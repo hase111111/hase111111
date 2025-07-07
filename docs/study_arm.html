@@ -72,38 +72,95 @@
       <h1 class="custom-heading pc-only">　協働作業のための軌道生成　</h1>
       <h2 class="custom-heading sp-only">協働作業のための軌道生成</h2>
 
-      <h2><b>概要</b></h2>
-        <p>
-          現在，大学院で協働作業のための軌道生成に関する研究を行っています．
-          協働作業とは人間とロボットが協力して作業を行うことを指します．
-          なかでも，作業空間や作業時間を共有することが特徴です．
-          人間とロボットが協働することで，作業の柔軟性や効率性が向上すると期待されています．
-          しかし，人間とロボットの作業空間を共有するため，接触のリスクが高く，人間の安全性を確保することが課題です．
-          <br> <br>
-          そこで，本研究では人間との接触を回避しつつ，協働作業を行うための軌道生成手法を提案しています．
-          具体的には，人間との接触のリスクを定式化し，最適化問題の制約条件として組み込むことで，接触を回避する関節角軌道を生成します．
-          提案手法の新規性として，接触のリスクを定量的に評価している点が挙げられます．
-        </p>
+      <div class="row">
+        <div class="col-md-6">
+          <h2><b>概要</b></h2>
+          <p>
+            現在，大学院で協働作業のための軌道生成に関する研究を行っています．
+            協働作業とは人間とロボットが協力して作業を行うことを指します．
+            なかでも，作業空間や作業時間を共有することが特徴です．
+            人間とロボットが協働することで，作業の柔軟性や効率性が向上すると期待されています．
+            しかし，人間とロボットの作業空間を共有するため，接触のリスクが高く，人間の安全性を確保することが課題です．
+            <br> <br>
+            そこで，本研究では人間との接触を回避しつつ，協働作業を行うための軌道生成手法を提案しています．
+            具体的には，人間との接触のリスクを定式化し，最適化問題の制約条件として組み込むことで，接触を回避する関節角軌道を生成します．
+            提案手法の新規性として，接触のリスクを定量的に評価している点が挙げられます．
+            <br> <br>
+            リスク評価は人間の掃引空間（sweep space）から行っております．
+            掃引空間とは，人間の手や体が移動した範囲を表す空間であり，
+            本研究においては，人間との接触のリスクが高い領域を特定するために用います．
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img src="images/robot_arm/sweep.jpg" alt="Seed-noid" class="img-fluid">
+          <p style="text-align: center;">人間の掃引空間</p>
+        </div>
+      </div>
     </div>
 
-    <!--現在の進捗-->
+    <!--軌道生成アルゴリズム-->
     <div class="container container-margin">
-      <h1 class="custom-heading pc-only">　開発したプログラム　</h1>
-      <h2 class="custom-heading sp-only">開発したプログラム</h2>
+      <h1 class="custom-heading pc-only">　軌道生成アルゴリズム　</h1>
+      <h2 class="custom-heading sp-only">軌道生成アルゴリズム</h2>
 
       <div class="row">
         <div class="col-md-6">
-          <img src="images/robot_seed.jpg" alt="Seed-noid" class="img-fluid">
-        </div>
-        <div class="col-md-6">
-          <h2>現在の進捗</h2>
+          <h2><b>最適制御</b></h2>
           <p>
-            現在は手法の確立のために，先行研究や関連研究を調査している段階にあります．
+            冗長自由度を持つロボットの軌道生成を行う場合に，より正確には各関節についての関節角度軌道を生成するために．
+            私の研究では最適制御の手法を用いています．
+            これは，軌道を引数に取る目的関数を定義し，それを最小化するような軌道を求める手法です．
+            目的関数では，軌道の滑らかさや接触のリスクを評価する項を定義しています．
             <br> <br>
-            また，実験に使用する予定の人型ロボットSeed-noidの操作方法の習得を行っています．
+            CasADiという最適化ソルバーを用いて最適化問題を解き，生成された軌道をロボットに適用することで，ロボットを制御しています．
+            <br> <br>
+            図はPythonで作成した，2 Linkのマニピュレータの軌道生成を行うデモです．
           </p>
         </div>
+        <div class="col-md-6">
+          <center>
+            <img src="images/robot_arm/tra_plan.gif" alt="Seed-noid" class="img-fluid">
+            <p style="text-align: center;">軌道生成のデモ</p>
+          </center>
+        </div>
       </div>
+    </div>
+
+    <!--使用しているロボット-->
+    <div class="container container-margin">
+      <h1 class="custom-heading pc-only">　使用しているロボット　</h1>
+      <h2 class="custom-heading sp-only">使用しているロボット</h2>
+
+      <div class="row">
+        <div class="col-md-6">
+          <h2><b>Seed-Noid</b></h2>
+          <p>
+            研究では，Seed-Noidという協働ロボットを使用しています．
+            Seed-Noidは7自由度の腕を2本持つロボットであり，協働作業に適した設計がされています．
+            <br> <br>
+            Seed-Noidは，関節角度を制御することで，ロボットの腕を自由に動かすことができます．
+            基本的な処理はROSパッケージとして提供されており，シミュレーション環境での動作確認が容易です．
+            また，実機の関節角度を取得するためのノードも提供されており，実機での動作確認も可能です．
+            <br> <br>
+            軌道生成の計算を行う際には，右図のようなシミュレーションモデルを使用しています．
+            このモデルは，実機の関節角度を取得するためのノードと連携しており，シミュレーション環境での動作確認が可能です．
+          </p>
+        </div>
+        <div class="col-md-3">
+          <img src="images/robot_arm/seed_noid.jpg" alt="Seed-noid" class="img-fluid">
+          <p style="text-align: center;">実機の関節</p>
+        </div>
+        <div class="col-md-3">
+          <img src="images/robot_arm/seed_noid_model.jpg" alt="Seed-noid" class="img-fluid">
+          <p style="text-align: center;">シミュレーションモデル</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container container-margin">
+      <p>
+        ※ この記事は，現在書きかけです．
+      </p>
     </div>
     
 
