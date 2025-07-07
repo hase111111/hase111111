@@ -6,11 +6,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ポートフォリオ/Portfolio</title>
+
+    <!--Bootstrapの読み込み-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!--CSSの読み込み-->
     <link rel="stylesheet" type="text/css" href="index.css">
+
+    <!--Googleフォントの読み込み-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
   </head>
 
   <body>
+    <!--Googleフォントのスタイル設定-->
+    <style>
+      body {
+        font-family: 'Zen Maru Gothic', sans-serif;
+      }
+    </style>
+
     <!--NavBar(画面上部のメニュー)-->
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
       <div class="container-fluid">
@@ -52,10 +68,11 @@
     <div></div>
 
     <!--タイトル-->
-    <div class="container container-margin">
-      <h1>協働作業のための軌道生成</h1>
+    <div class="container container-margin-big">
+      <h1 class="custom-heading pc-only">　協働作業のための軌道生成　</h1>
+      <h2 class="custom-heading sp-only">協働作業のための軌道生成</h2>
 
-      <h2>概要</h2>
+      <h2><b>概要</b></h2>
         <p>
           現在，大学院で協働作業のための軌道生成に関する研究を行っています．
           協働作業とは人間とロボットが協力して作業を行うことを指します．
@@ -71,6 +88,9 @@
 
     <!--現在の進捗-->
     <div class="container container-margin">
+      <h1 class="custom-heading pc-only">　開発したプログラム　</h1>
+      <h2 class="custom-heading sp-only">開発したプログラム</h2>
+
       <div class="row">
         <div class="col-md-6">
           <img src="images/robot_seed.jpg" alt="Seed-noid" class="img-fluid">
