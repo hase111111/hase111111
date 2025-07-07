@@ -28,41 +28,40 @@
     </style>
 
     <!--NavBar(画面上部のメニュー)-->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light" style="background-color: #cccccc;">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-            <h2>Portfolio</h2>
+          <h2>Portfolio</h2>
         </a>
-    
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
         </button>
-    
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <!--Homebutton．押すとページトップへ戻る-->
-                    <a class="nav-link active" href="index.html">Home</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">研究</a>
-                    <ul class="dropdown-menu dropdown-menu-right">           
-                        <li><a class="dropdown-item" href="study_leg.html">グラフ探索による自由歩容生成</a></li>
-                        <li><a class="dropdown-item" href="study_arm.html">協働ロボットのための軌道生成</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">ゲーム</a>
-                    <ul class="dropdown-menu dropdown-menu-left">           
-                        <li><a class="dropdown-item" href="game_bird.html">ばーどだっしゅ!</a></li>
-                        <li><a class="dropdown-item" href="game_carry.html">Carry Block!</a></li>
-                        <li><a class="dropdown-item" href="game_match.html">マッチ棒ゲーム</a></li>
-                        <li><a class="dropdown-item" href="game_merin.html">めりんちゃんのホームランダービー</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="game_other.html">その他のゲーム</a></li>
-                    </ul>
-                </li>
-            </ul>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+            <!--Homebutton．押すとページトップへ戻る-->
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">研究</a>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li><a class="dropdown-item" href="study_leg.html">グラフ探索による自由歩容生成</a></li>
+                <li><a class="dropdown-item" href="study_arm.html">協働ロボットのための軌道生成</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">ゲーム</a>
+              <ul class="dropdown-menu dropdown-menu-left">
+                <li><a class="dropdown-item" href="game_bird.html">ばーどだっしゅ!</a></li>
+                <li><a class="dropdown-item" href="game_carry_vault.html">Carry Vault</a></li>
+                <li><a class="dropdown-item" href="game_match.html">マッチ棒ゲーム</a></li>
+                <li><a class="dropdown-item" href="game_merin.html">めりんちゃんのホームランダービー</a></li>
+                <li><a class="dropdown-item" href="game_carry.html">Carry Block!</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="game_other.html">その他のゲーム</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -158,18 +157,16 @@
         <!--ゲーム２つ目-->
         <div class="col">
           <div class="card h-100">
-            <a href="game_carry.html"><img src="images/carry_block/carry_block.jpg" class="card-img-top my-item-link" alt="..."></a>
+            <a href="game_carry_vault.html"><img src="images/carry_vault/screen_shot1.jpg" class="card-img-top my-item-link" alt="..."></a>
             <div class="card-body">
-              <h5 class="card-title"><a href="game_carry.html">Carry Block !</a></h5>
+              <h5 class="card-title"><a href="game_carry_vault.html">Carry Vault</a></h5>
               <p class="card-text">
-                Unityで開発した3Dパズルゲームです．
-                10人程度のサークルのメンバーと共に，約1年かけて開発しました．
-                私はプランナー，3Dモデラー，アニメーターとして開発に携わりました．
-                文化祭の他，GAME^3（ゲームキュービック），ゲームプログラマー甲子園などさまざまなイベントで発表しました．
+                これまでのゲーム制作で自作した3Dモデルを配布するために作成した，Unity Packageです．
+                UPMを通じて，GitHubから簡単にインポートできるようにしています．
               </p>
             </div>
             <div class="card-footer">
-              <small class="text-body-secondary">2024年(大学4年時)に作成．<br> 文化祭や各種イベントで発表．</small>
+              <small class="text-body-secondary">修士1年時に作成<br>GitHubで公開</small>
             </div>
           </div>
         </div>
@@ -212,16 +209,18 @@
         <!--ゲーム５つ目-->
         <div class="col">
           <div class="card h-100">
-            <a href="game_carry_vault.html"><img src="images/carry_vault/screen_shot1.jpg" class="card-img-top my-item-link" alt="..."></a>
+            <a href="game_carry.html"><img src="images/carry_block/carry_block.jpg" class="card-img-top my-item-link" alt="..."></a>
             <div class="card-body">
-              <h5 class="card-title"><a href="game_carry_vault.html">Carry Vault</a></h5>
+              <h5 class="card-title"><a href="game_carry.html">Carry Block !</a></h5>
               <p class="card-text">
-                これまでのゲーム制作で自作した3Dモデルを配布するために作成した，Unity Packageです．
-                UPMを通じて，GitHubから簡単にインポートできるようにしています．
+                Unityで開発した3Dパズルゲームです．
+                10人程度のサークルのメンバーと共に，約1年かけて開発しました．
+                私はプランナー，3Dモデラー，アニメーターとして開発に携わりました．
+                文化祭の他，GAME^3（ゲームキュービック），ゲームプログラマー甲子園などさまざまなイベントで発表しました．
               </p>
             </div>
             <div class="card-footer">
-              <small class="text-body-secondary">修士1年時に作成<br>GitHubで公開</small>
+              <small class="text-body-secondary">2024年(大学4年時)に作成．<br> 文化祭や各種イベントで発表．</small>
             </div>
           </div>
         </div>

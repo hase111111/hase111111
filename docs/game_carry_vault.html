@@ -28,41 +28,40 @@
     </style>
 
     <!--NavBar(画面上部のメニュー)-->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light" style="background-color: #cccccc;">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-            <h2>Portfolio</h2>
+          <h2>Portfolio</h2>
         </a>
-    
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
         </button>
-    
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <!--Homebutton．押すとページトップへ戻る-->
-                    <a class="nav-link active" href="index.html">Home</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">研究</a>
-                    <ul class="dropdown-menu dropdown-menu-right">           
-                        <li><a class="dropdown-item" href="study_leg.html">グラフ探索による自由歩容生成</a></li>
-                        <li><a class="dropdown-item" href="study_arm.html">協働ロボットのための軌道生成</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">ゲーム</a>
-                    <ul class="dropdown-menu dropdown-menu-left">           
-                        <li><a class="dropdown-item" href="game_bird.html">ばーどだっしゅ!</a></li>
-                        <li><a class="dropdown-item" href="game_carry.html">Carry Block!</a></li>
-                        <li><a class="dropdown-item" href="game_match.html">マッチ棒ゲーム</a></li>
-                        <li><a class="dropdown-item" href="game_merin.html">めりんちゃんのホームランダービー</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="game_other.html">その他のゲーム</a></li>
-                    </ul>
-                </li>
-            </ul>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+            <!--Homebutton．押すとページトップへ戻る-->
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">研究</a>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li><a class="dropdown-item" href="study_leg.html">グラフ探索による自由歩容生成</a></li>
+                <li><a class="dropdown-item" href="study_arm.html">協働ロボットのための軌道生成</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">ゲーム</a>
+              <ul class="dropdown-menu dropdown-menu-left">
+                <li><a class="dropdown-item" href="game_bird.html">ばーどだっしゅ!</a></li>
+                <li><a class="dropdown-item" href="game_carry_vault.html">Carry Vault</a></li>
+                <li><a class="dropdown-item" href="game_match.html">マッチ棒ゲーム</a></li>
+                <li><a class="dropdown-item" href="game_merin.html">めりんちゃんのホームランダービー</a></li>
+                <li><a class="dropdown-item" href="game_carry.html">Carry Block!</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="game_other.html">その他のゲーム</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -70,198 +69,67 @@
     <!--NavBarからスペースをとるためのダミー-->
     <div></div>
 
-    <div class="bg-body-secondary container-margin pc-only" width="max">
-      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="d-flex justify-content-center">
-              <img src="images/carry_block/carry_block.jpg" alt="images/carry_block/carry_block.jpg" class="img-fluid" width="50%" height="640">
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="d-flex justify-content-center">
-              <img src="images/carry_block/carry_block2.jpg" alt="images/carry_block/carry_block2.jpg" class="img-fluid" width="50%" height="640">
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="d-flex justify-content-center">
-              <img src="images/carry_block/carry_block3.jpg" alt="images/carry_block/carry_block3.jpg" class="img-fluid" width="50%" height="640">
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="d-flex justify-content-center">
-              <img src="images/carry_block/carry_block4.jpg" alt="images/carry_block/carry_block4.jpg" class="img-fluid" width="50%" height="640">
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="d-flex justify-content-center">
-              <img src="images/carry_block/carry_block0.jpg" alt="images/carry_block/carry_block0.jpg" class="img-fluid" width="50%" height="640">
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="d-flex justify-content-center">
-              <img src="images/carry_block/carry_block1.jpg" alt="images/carry_block/carry_block1.jpg" class="img-fluid" width="50%" height="640">
-            </div>
-          </div>
-        </div>
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" style="filter: invert(100%);" aria-hidden="true"></span>
-          <span class="visually-hidden">前へ</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" style="filter: invert(100%);" aria-hidden="true"></span>
-          <span class="visually-hidden">次へ</span>
-        </button>
-      </div>
-    </div>
-
     <!--タイトル-->
-    <div class="container container-margin">
-      <h1 class="custom-heading">　Carry Block!　</h1>
-
-      <p>
-        Carry Block!は，3D協力パズルゲームです．
-        <br>
-        <br>
-        プレイヤーたちは，遺跡を探検する冒険者となり，後ろから追ってくるモンスターから逃げるために，
-        遺跡を移動するためのカートを通すための道を作ります．
-        ステージはブロックで封鎖されており，カートを通すための道を作るためには，
-        ブロックを持ち上げたり，移動させたりする必要があります．
-        ブロックは積み重ねることができ，これによってカートが通るためのスペースを作ることができます．
-        カートを通すための道を作ることができれば，カートに乗り込んで次のステージに進むことができます．
-        制限時間を過ぎると，後ろから追ってくるモンスターに追いつかれてゲームオーバーとなります．
-        <br>
-        <br>
-        このゲームは，ゲームプログラミングサークルのメンバーでチーム開発した作品です．
-        私は主に，プランナー，3Dモデラーとして参加しました．
-        <br>
-        <br>
-        また，このゲームはゲームクリエイター甲子園2023に応募しております．
-        <br>
-        リンク: <a href="https://gameparade.creators-guild.com/works/1093">Carry Block! - ゲームクリエイター甲子園2023</a>（プレイ動画があります）
-        <br>
-        ソースコード: <a href="https://github.com/suupia/CarryBlock.git">GitHub （suupia / CarryBlock）</a>
-      </p>
-
-      <ul>
-        <li>開発期間: 2023年3月~2023年11月</li>
-        <li>開発環境: Unity 2021.3.18f1</li>
-        <li>使用言語: C#</li>
-        <li>バージョン管理: git </li>
-        <li>開発人数: 10人程度</li>
-        <li>自身の担当: プランナー，3Dモデラー</li>
-        <li>ジャンル: 3D協力パズルゲーム</li>
-        <li>プラットフォーム: Windows，Mac</li>
-      </ul>
-    </div>
-
-    <div class="container container-margin">
-      <h1 class="custom-heading">　制作にかかわった内容　</h1>
+    <div class="container container-margin-big">
+      <h1 class="custom-heading pc-only">　Carry Vault　</h1>
+      <h2 class="custom-heading sp-only">Carry Vault</h2>
 
       <div class="row">
-        <h2><b>プランナーとしての活動</b></h2>
-        <div class="col-md-6">
+        <div class="col-md-8">
           <p>
-            プランナーとして，ゲームの企画を提案しました．
-            Carry Blockがこの形になるまで，さまざまなアイデアが出されました．
-            私はアイデアをまとめるために，UE5のBluePrintを使ってプロトタイプを作成しました．
-            出されたアイデアを実際にプレイしてみることで，チームメンバーの理解を深めることができました．
-            <br>
-            <br>
-            また，ゲームの方向性が決まってからも，ゲームの拡張のためのアイデアを提案しました．
-            他のプランナーと協力して草案を作成し，それをベースにチームメンバーに意見を求め，ブラッシュアップしました．
+            CarryVaultはUnity用の3Dモデルのアセットです．
+            UnityPackageManagerを使用して，Unityのプロジェクトに簡単にインポートできます．
+            <br> <br>
+            このパッケージでは，ファンタジーの世界，ロボット，古代の遺跡など，さまざまなテーマのローポリで鮮やかなモデルを提供しており，
+            ゲーム開発者が簡単に使用できるように設計されています．
+            <br> <br>
+            詳細な説明は以下のGitHubのリンクのREADMEを参照してください．
+            <br> <br>
+            配布元はこちら： <a href="https://github.com/hase111111/carry-vault.git">GitHub</a>
+
+            <ul>
+              <li>開発期間: 2024年12月~2025年1月</li>
+              <li>開発環境: Unity</li>
+              <li>使用言語: C#</li>
+              <li>バージョン管理: git </li>
+              <li>開発人数: 1人</li>
+            </ul>
           </p>
+        </div>
+        <div class="col-md-4">
+          <!-- 画像を挿入-->
+          <center>        
+            <img src="images/carry_vault/thumbnail.jpg" alt="Carry Vault" class="img-fluid">
+          </center>
+        </div>
+      </div>
+    </div>
+
+    <div class="container container-margin">
+      <h1 class="custom-heading">　スクリーンショット　</h1>
+
+      <p>
+        以下はCarryVaultのスクリーンショットです．
+        これらの画像は、アセットに含まれるモデルの一部を示しています．
+        <br> <br>
+        簡単なスクリプトも含まれており、Unityのシーンにモデルを配置して簡単にアニメーションを確認できます．
+        <br> <br>
+      </p>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="d-flex justify-content-center">
+            <img src="images/carry_vault/screen_shot1.jpg" alt="images/carry_block/carry_proto0.jpg" class="img-fluid">
+          </div>
+          <p style="text-align: center;">草原のモデル</p>
         </div>
         <div class="col-md-6">
           <div class="d-flex justify-content-center">
-            <img src="images/carry_block/carry_proto0.gif" alt="images/carry_block/carry_proto0.jpg" class="img-fluid">
+            <img src="images/carry_vault/screen_shot2.jpg" alt="images/carry_block/carry_proto0.jpg" class="img-fluid">
           </div>
-
-          <br>
-
-          <div class="d-flex justify-content-center">
-            <img src="images/carry_block/carry_proto1.gif" alt="images/carry_block/carry_proto0.jpg" class="img-fluid">
-          </div>
-
-          <p style="text-align: center;">プロトタイプの画面</p>
+          <p style="text-align: center;">ロボットのモデル</p>
         </div>
       </div>
-
-      <hr>
-
-      <div class="row container-margin">
-        <h2><b>3Dモデラーとしての活動</b></h2>
-        <div class="col-md-6">
-          <p>
-            3Dモデラーとして，ゲーム内のオブジェクトを作成しました．
-            なかでも，プレイヤーやモンスターなどの動的に動くオブジェクトを作成しました．
-            Blenderを使用してモデリングを行い，アニメーションを作成しました．
-            <br>
-            <br>
-            ゲーム内に登場するマップタイルやブロックなどのステージオブジェクトを含め，
-            すべての3Dモデルがオリジナルなものとなっています．
-            そのため，ゲームの世界観を効果的に表現することができました．
-          </p>
-        </div>
-        <div class="col-md-6">
-
-          <div class="row">
-            <div class="col-md-6">
-              <div class="d-flex justify-content-center">
-                <img src="images/carry_block/carry_model0.jpg" alt="images/carry_block/carry_model0.jpg" class="img-fluid">
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="d-flex justify-content-center">
-                <img src="images/carry_block/carry_model1.jpg" alt="images/carry_block/carry_model1.jpg" class="img-fluid">
-              </div>
-            </div>
-          </div>
-          <br>
-          <p style="text-align: center;"> 担当した3Dモデル</p>
-        </div>
-      </div>
-
-      <hr>
-
-      <div class="container container-margin">
-        <h2><b>参加したイベント</b></h2>
-        <div class="row">
-          <div class="col-md-6">
-            <p>
-              Carry Block!はさまざまなゲーム発表イベントに参加しました．
-              ゲームクリエイター甲子園2023だけでなく，東京工業大学のゲーム展示イベントのゲームキュービックにも出展しました．
-              <br>
-              <br>
-              また，埼玉大学の文化祭，むつめ祭にも出展しました．
-            </p>
-          </div>
-          <div class="col-md-6">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="d-flex justify-content-center">
-                  <img src="images/carry_block/mutsume1.jpg" alt="images/carry_block/mutsume1.jpg" class="img-fluid">
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="d-flex justify-content-center">
-                  <img src="images/carry_block/mutsume2.jpg" alt="images/carry_block/mutsume2.jpg" class="img-fluid">
-                </div>              
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
     </div>
 
     <!--トップに戻るを作成-->
