@@ -1,13 +1,11 @@
 
 ## 🌱プロフィール/Profile
 
-ロボット工学を専攻している機械工学系の学生です．
-とくに軌道計画，運動制御，機構解析を研究しています．
-また，趣味でゲームプログラミングを行っております．
+ゲーム会社に勤めているゲーム好きのおじさんです．
+よく趣味でゲームプログラミングを行っております．
 
-I am a mechanical engineering student specializing in robotics.
-I am researching trajectory planning, motion control, and mechanism analysis.
-I also do game programming as a hobby.
+I’m a game-loving guy working at a game company. 
+I often do game programming as a hobby!
 
 <p align="left">
   <img alt="Top Langs" height="150px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=hase111111&count_private=true&layout=compact&show_icons=true&theme=onedark" />
