@@ -18,11 +18,3 @@ I often do game programming as a hobby!
 ![](https://skillicons.dev/icons?i=c,cpp,python,cs,matlab)
 
 ![](https://skillicons.dev/icons?i=vscode,visualstudio,anaconda,blender,unreal,unity,git,github,arduino,ros,linux,ubuntu)
-
-
-## 💬ポートフォリオ/Portfolio
-ポートフォリオは以下のリンクからご覧いただけます．
-
-Portfolio is available at the following link.
-
-https://hase111111.github.io/hase111111/
